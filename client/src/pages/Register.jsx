@@ -22,7 +22,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(user); 
-    const response = await fetch("https://gbim-vercel.vercel.app/", {
+    const response = await fetch("https://gbim-vercel.vercel.app/register", {
         method:"POST",
         headers:{
             "Content-Type":"application/json"
