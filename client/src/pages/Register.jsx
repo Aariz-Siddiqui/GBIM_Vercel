@@ -24,6 +24,7 @@ const Register = () => {
     console.log(user); 
     const response = await fetch("https://gbim-vercel-backend.vercel.app/register", {
         method:"POST",
+        mode: 'no-cors',
         headers:{
             "Content-Type":"application/json"
         },
