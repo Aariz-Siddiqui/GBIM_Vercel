@@ -24,7 +24,6 @@ const Login = () => {
     console.log(user); 
     const response = await fetch("https://gbim-vercel-backend.vercel.app/login", {
         method:"POST",
-        mode: 'no-cors',
         headers:{
             "Content-Type":"application/json"
         },
