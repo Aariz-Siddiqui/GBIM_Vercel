@@ -22,7 +22,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(user); 
-    const response = await fetch("https://gbim-vercel.vercel.app/login", {
+    const response = await fetch("https://gbim-vercel-backend.vercel.app/login", {
         method:"POST",
         headers:{
             "Content-Type":"application/json"
