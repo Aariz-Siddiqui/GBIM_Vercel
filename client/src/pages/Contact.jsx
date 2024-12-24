@@ -21,7 +21,6 @@ const handleSubmit =async (e)=>{
     e.preventDefault();
     const response = await fetch("https://gbim-vercel-backend.vercel.app/contact", {
         method:"POST",
-        mode: 'no-cors',
         headers:{
             "Content-Type":"application/json"
         },
