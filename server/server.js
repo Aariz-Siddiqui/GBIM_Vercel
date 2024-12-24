@@ -4,7 +4,7 @@ const router = require("./router");
 const connectdb = require("./database/db");
 const cors = require("cors");
 const corsOption ={
-    origin:"http://localhost:5173",
+    origin:"https://gbim-vercel-zkwo.vercel.app",
     methods:"GET,POST,PUT,PATCH,DELETE,HEAD",
     credentials:true,
 
