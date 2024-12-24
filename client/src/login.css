@@ -1,0 +1,36 @@
+
+
+  
+  /* Title Styling */
+  h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form Label Styling */
+  label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+  
+  /* Input Field Styling */
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+
+  

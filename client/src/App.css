@@ -1,0 +1,38 @@
+.main-header {
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(to right, #4ac66f, #3e5146, #6a11cb);
+  color: white;
+  padding: 10px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the text and button horizontally */
+  align-items: center; /* Vertically align the items */
+  font-size: 20px;
+  font-style: inherit; 
+  z-index: 1000; /* Keeps it on top of other elements */
+}
+
+.main-header .header-text {
+  margin-right: 10px; /* Add space between text and button */
+}
+
+.m-t-btn {
+  width: 100px; /* Width of the button */
+  height: 30px; /* Height of the button */
+  border-radius: 50px; /* Makes the button circular */
+  background-color: #ffffff; /* Button color */
+  color: rgb(148, 96, 245); /* Text color */
+  display: flex; /* Center the text inside */
+  justify-content: center; /* Horizontal center */
+  align-items: center; /* Vertical center */
+  font-size: 13px; /* Font size for the text */
+  font-weight: bolder;
+  border: none; /* Remove default border */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.m-t-btn:hover {
+  background-color: #2ecc71; /* Change color on hover */
+}
+
