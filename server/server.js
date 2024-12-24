@@ -11,7 +11,7 @@ const corsOption ={
 };
 app.use(cors(corsOption));
 app.use(express.json());
-app.use("https://gbim-vercel-zkwo.vercel.app",router);
+app.use("/",router);
 app.get("/", (req,res)=>{res.send("Welcome to the backend")});
 router.route("/register");
 router.route("/login");
