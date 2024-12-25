@@ -11,7 +11,7 @@ const corsOption ={
 app.use(cors(corsOption));
 app.use(express.json());
 app.use("/",router);
-app.get("/", (req,res)=>{res.send("Welcome to the backend")});
+router.route("/");
 router.route("/register");
 router.route("/login");
 router.route("/contact");
