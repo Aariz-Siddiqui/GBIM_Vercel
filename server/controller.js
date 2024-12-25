@@ -1,6 +1,6 @@
 const User = require("./database/user-model");
 const contactDB = require("./database/contact-model");
-const home = ()=>{
+const home = (req,res)=>{
     res.send("Welcome to the home page")
 }
 const register =async(req,res)=>{
