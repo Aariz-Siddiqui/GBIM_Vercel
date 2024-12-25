@@ -19,7 +19,7 @@ const handleInput =(e)=>{
 
 const handleSubmit =async (e)=>{
     e.preventDefault();
-  
+  console.log('Form Data:', user);
     if (!user.name || !user.phone || !user.email || !user.message) {
         alert("Please fill out all fields.");
         return;
