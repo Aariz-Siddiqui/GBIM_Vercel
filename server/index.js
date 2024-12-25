@@ -15,6 +15,6 @@ router.route("/");
 router.route("/register");
 router.route("/login");
 router.route("/contact");
-connectdb().then(app.listen(3001, ()=>{
+connectdb().then(app.listen(3000, ()=>{
     console.log("server is up and running at the port number 8000")
 }));
