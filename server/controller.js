@@ -38,7 +38,7 @@ const contact =async(req,res)=>{
    try{
         const {name,email,phone,message} = req.body;
         if(!name||!phone||!email||!message){
-            return res.status(409).send("Please fill all the details");
+            return res.status(404).send("Please fill all the details");
         }
         const saveDetails = await contactDB.create({name,phone,email,message});
         res.status(201).send("Message sent successfully")
