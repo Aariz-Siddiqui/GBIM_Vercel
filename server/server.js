@@ -15,6 +15,6 @@ app.get("/", (req,res)=>{res.send("Welcome to the backend")});
 router.route("/register");
 router.route("/login");
 router.route("/contact");
-connectdb().then(app.listen(8000, ()=>{
+connectdb().then(app.listen(3001, ()=>{
     console.log("server is up and running at the port number 8000")
 }));
