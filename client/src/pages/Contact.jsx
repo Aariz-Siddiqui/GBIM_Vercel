@@ -19,6 +19,11 @@ const handleInput =(e)=>{
 
 const handleSubmit =async (e)=>{
     e.preventDefault();
+  
+    if (!user.name || !user.phone || !user.email || !user.message) {
+        alert("Please fill out all fields.");
+        return;
+    }
     const response = await fetch("https://gbim-vercel-backend.vercel.app/contact", {
         method:"POST",
         headers:{
