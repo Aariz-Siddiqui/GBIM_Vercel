@@ -47,4 +47,4 @@ const contact =async(req,res)=>{
    }
 }
 
-module.exports = {register,login,contact};
+module.exports = {home,register,login,contact};
