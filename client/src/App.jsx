@@ -1,5 +1,5 @@
 import React from "react";
-//import "./App.css"
+import "./App.css"
 //import "./contact.css"
 //import "./register.css"
 //import "./login.css"
