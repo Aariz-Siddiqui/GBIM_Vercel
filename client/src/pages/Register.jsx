@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 const Register = () => {
   const [user, setUser] = useState({
     name: "",
@@ -18,6 +19,7 @@ const Register = () => {
     }));
   };
 
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,8 +31,21 @@ const Register = () => {
         },
         body:JSON.stringify(user)
     })
+
+     if(response.status==409){
+      alert ("email already exists")
+      navigate("/login")
+    }
+    
     if(response.ok){
-      alert("User registered successfully!!!!")
+      alert("User registered successfully");
+      setUser({
+        name: "",
+        email: "",
+        phone: "",
+        password: ""
+      })
+      navigate("/login")
     }
   };
 
