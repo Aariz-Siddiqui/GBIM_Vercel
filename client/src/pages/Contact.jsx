@@ -1,4 +1,5 @@
 import {React, useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 const Contact = () => {
 const [user,setUser] = useState({
   name:"",
@@ -16,7 +17,7 @@ const handleInput =(e)=>{
     [name]:value
   })
 }
-
+const navigate = useNavigate();
 const handleSubmit =async (e)=>{
     e.preventDefault();
   console.log('Form Data:', user);
@@ -36,6 +37,7 @@ const handleSubmit =async (e)=>{
     console.log(response);
     if(response.ok){
         alert("message sent successfully");
+      navigate("/")
     }
 }
 
