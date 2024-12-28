@@ -32,10 +32,18 @@ const Login = () => {
     console.log(response);
     if (response.ok){
         alert("Login successful");
+        setUser({
+          email:"",
+          password:""
+        })
         navigate("/contact")
-    }else{
-        alert("invalid credentials")
     }
+      
+    if(response.status==404){
+      alert("user doens't exists");
+      navigate("/register");
+    }
+
   };
 
   return (
