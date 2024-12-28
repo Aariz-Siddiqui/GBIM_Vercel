@@ -21,7 +21,7 @@ const login =async(req,res)=>{
         const {email,password} = req.body;
         const verifyUser = await User.findOne({email});
         if (!verifyUser){
-            return res.status(409).send("User doesnt exist");
+            return res.status(404).send("User doesnt exist");
         }
         const luser = await verifyUser.verifyPassword(password);
         if (luser){
