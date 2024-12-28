@@ -24,6 +24,8 @@ const handleSubmit =async (e)=>{
         alert("Please fill out all fields.");
         return;
     }
+  console.log("Payload being sent:", user);
+
     const response = await fetch("https://gbim-vercel-backend.vercel.app/contact", {
         method:"POST",
         headers:{
