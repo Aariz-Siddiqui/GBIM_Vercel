@@ -37,7 +37,12 @@ const handleSubmit =async (e)=>{
     console.log(response);
     if(response.ok){
         alert("message sent successfully");
-      navigate("/")
+       setUser({
+  name:"",
+  phone:"",
+  email:"",
+  message:""
+       })
     }
 }
 
