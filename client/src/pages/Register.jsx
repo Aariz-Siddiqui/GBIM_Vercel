@@ -29,6 +29,9 @@ const Register = () => {
         },
         body:JSON.stringify(user)
     })
+    if(response.ok){
+      alert("User registered successfully!!!!")
+    }
   };
 
   return (
